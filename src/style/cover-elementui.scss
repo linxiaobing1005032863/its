@@ -1,0 +1,127 @@
+$headerBg:#3988ff;
+.c-header {
+  .el-menu--horizontal>.el-menu-item {
+    height:40px;
+    line-height: 40px;
+    background-color: $headerBg;
+  }
+  .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover {
+    background-color:$headerBg;
+    color:#82afff;
+  }
+  .el-menu-item {
+    padding:0 11px;
+  }
+}
+.el-aside {
+  .el-submenu {
+    margin-right: -1px;
+  }
+}
+.el-menu--horizontal>.el-menu-item.is-active {
+  background-color: #ffffff;
+  color:#4f91f4;
+}
+.c-table{
+  &.el-table th {
+    //background-color: red;
+  }
+}
+
+.c-ip2 {
+  width:47%;
+}
+
+.c-must {//表单是否必填
+  .el-form-item__label {
+    &:before{
+      content: '*';
+      color:red;
+    }
+  }
+}
+.c-nomust {//表单是否必填
+  .el-form-item__label {
+    &:before{
+      content: '*';
+      color:white;
+    }
+  }
+}
+.c-eascader {
+  .el-cascader {
+    width:100%;
+  }
+}
+
+.el-dialog__header {
+  background-color: $headerBg;
+  .el-dialog__title {
+    color:#ffffff;
+  }
+}
+
+.el-table th {
+  background-color: $headerBg !important;
+  .cell {
+    color:#fff;
+  }
+}
+// 修改表格上下内边距
+.el-table td, .el-table th {
+  padding: 1px 0;
+}
+.c-search {
+  .el-form-item {
+    margin-bottom: 5px;
+  }
+  .el-input {
+    width:150px;
+  }
+  .c-cities {
+    .el-input{
+      width:200px;
+    }
+  }
+}
+//设置dialog大小
+.c-bigDialog {
+  .el-dialog {
+    margin-top: 5vh !important;
+    width:90%;
+  }
+}
+.c-maxbody {
+  .el-dialog {
+    width: 70%;
+  }
+}
+//设置侧边栏方向
+.el-submenu__icon-arrow {
+  right: 5px !important;
+}
+
+.c-header {
+  .el-select {
+    width:110px;
+  }
+}
+.c-container {//修改整体样式
+  .el-container,.el-main {
+    background-color: #ffffff;
+    margin:10px;
+  }
+}
+.el-table__fixed-right::before, .el-table__fixed::before {
+  background-color: transparent;
+}
+
+.c-only {//聊天室修改 卡片
+  .el-card__header {
+    background: $headerBg;
+  }
+  .el-card__body {
+    height: 500px ;
+    padding: 15px 0 0 0 ;
+  }
+}
